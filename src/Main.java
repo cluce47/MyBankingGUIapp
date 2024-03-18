@@ -39,13 +39,15 @@ public class Main {
         while (true){
             switch (choice) {
             case 1:
-                System.out.println("What is your balance?");
+                System.out.print("What is your balance?");
                 double balance = in.nextDouble();
                 Account general = new Account(balance, "checking1");
                 general.toString();
                 break;
             case 2:
-                Investment invest1 = new Investment(123456.0, "GIC");
+                System.out.print("How much would you like to invest? ");
+                double amount = in.nextDouble();
+                Investment invest1 = new Investment(amount , "GIC");
                 invest1.toString();
                 break;
             case 3:
