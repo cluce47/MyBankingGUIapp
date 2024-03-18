@@ -51,6 +51,7 @@ public class Main {
                 invest1.toString();
                 break;
             case 3:
+
                 Credit credit1 = new Credit(500, "VISA");
                 credit1.toString();
                 break;
